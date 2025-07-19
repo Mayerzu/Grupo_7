@@ -1,0 +1,18 @@
+/* Estilo del footer*/
+.custom-footer {
+  background-color: #001d3d;
+  color: white;
+  font-family: 'Tinos', serif;
+  border-top: 3px solid #ffc300;
+}
+
+.custom-footer a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.rem;
+}
+
+.custom-footer a:hover {
+  color: #ffffff;
+}

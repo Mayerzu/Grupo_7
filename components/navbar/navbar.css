@@ -1,0 +1,81 @@
+/* Estilo del navbar*/
+body {
+  font-family: 'Tinos', serif;
+}
+
+/* Navbar estilo diagonal */
+.custom-navbar {
+  background: linear-gradient(135deg, #001d3d 49.5%, white 50%, #ffd700 50.5%);
+  border-bottom: 3px solid #ffffff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Logo redondeado*/
+.logo-navbar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Estilo de enlaces */
+#navbar-links .nav-link {
+  font-weight: 600;
+  transition: color 0.3s;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+}
+
+/* Estilo cuando está en modo expandido (pantallas amplias) */
+@media (min-width: 992px) {
+  
+  #navbar-links .nav-link {
+    color: #001d3d;
+  }
+
+  #navbar-links .nav-link:hover {
+    color: #666161; /* gris claro para pantalla amplia */
+  }
+  .custom-navbar {
+    background: linear-gradient(135deg, #001d3d 40%, #ffffff 50%, #ffd700 60%); /* Degradado */
+  }
+}
+
+/* Estilo cuando está colapsado  */
+@media (max-width: 991px) {
+  
+  #navbar-links .nav-link {
+    color: #ffd700;
+  }
+
+  #navbar-links .nav-link:hover {
+    color: white;
+  }
+}
+
+
+/* Nombre del museo */
+.navbar-brand {
+  font-family: 'Cinzel', serif;
+  color: #ffd700 !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease; 
+}
+
+.navbar-brand:hover {
+  color: white !important; 
+}
+
+
+/* Toggler o menu hamburguesa */
+.navbar-toggler {
+  background-color: #001d3d;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

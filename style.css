@@ -1,0 +1,46 @@
+/* Fuente principal */
+body {
+  font-family: 'Tinos', serif;
+  background: linear-gradient(to right, #e6eaef, #ffffff);
+  color: #001d3d;
+}
+
+
+.highlight {
+  color: #ffc300;
+}
+
+/* Imagen principal */
+.main-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #001d3d;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: transform 0.4s;
+}
+.main-image:hover {
+  transform: scale(1.05);
+}
+
+/* Animaciones */
+.fade-in {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 1s ease-in-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 1s ease-in-out;
+}
+.slide-in.slide {
+  opacity: 1;
+  transform: translateX(0);
+}
