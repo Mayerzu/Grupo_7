@@ -1,0 +1,114 @@
+/*==============================
+------------ BASE --------------
+================================*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+/*Main Content*/
+.main-container .container-text{
+    padding: 2rem;
+}
+
+p{
+
+    font-size: large;
+    text-align: left;
+}
+
+/*-----Cards-------*/
+
+.main-container .container-text .container-cards p{
+    text-align: left;
+}
+.main-container .container-text h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.main-container .container-cards .card img{
+    max-width: 100vw;
+    max-height: 50vh;
+}
+/*-----Botón Visitar Cards-------*/
+
+#btn{
+    background-color:rgb(255, 191, 0);
+    border-radius: 5rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+}
+
+/*-----Botón de scroll automático hacia arriba ↑-------*/
+.scroll-top-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vw;
+    width: 4rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    height: 4rem;
+    border-radius: 90%;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(255, 191, 0);
+    color: black;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    transition: all 0.5s ease-out; 
+}
+
+.scroll-top-btn:hover{
+    color: rgb(255, 191, 0);
+    background-color: black;
+}
+
+
+
+/*-----Efecto de aumento de opacidad en las cards-------*/
+.mostrarArriba {
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba{
+    0% {
+        transform: translateY(80px);
+        opacity: 70%;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+
+/*-----Efecto de imagenes con scroll animado-------*/
+.main-container .container-obras .container{
+    text-align: center;
+    justify-content: center;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.main-container .container-obras .container img{
+    padding: 2rem;
+
+}
+
+.main-container .container-obras .container .item{
+    transition: 0.7s;
+}
+
