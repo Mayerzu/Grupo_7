@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo | Prisma</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./programas.css" />
+</head>
+<body>
+
+    <!-- Navbar dinámica -->
+    <header id="navbar"></header>
+
+
+
+
+
+    <!-- Main Content -->
+
+    <main class="main-container">
+        <section class="container-imagen">
+            <img src="./assets/Programas.png" class="img-fluid" alt="imagen-exposiciones" style="max-width: 99vw;">
+        </section>
+        <section class="container-text">
+            <h1>Caminando hacia un museo situado</h1>
+            <p>Los programas de MARTE responden a una de nuestras líneas estratégicas: construcción continua de un museo situado. Un museo es una institución que está enraizada en un lugar geográfico: en un país, en una región, en una ciudad, en una colonia. Estas raíces crean puentes de diálogo con otras comunidades e instituciones para establecer un tejido de trabajo colaborativo y co-construcción del conocimiento, usando la práctica artística como espacio de visibilización y reflexión sobre las múltiples realidades que nos rodean. MARTE como museo situado es permeable y líquido, diluyendo las fronteras de sus paredes y trabajando a favor de la profesionalización artística y fomentando el arte como herramienta para la transformación social.</p>
+        </section>
+
+            <!-- Sección de columnas -->
+
+        <section class="container-columnas" style="margin: 2rem;">
+            <article class="row mt-3 mb-5">
+                <div class="col-lg-6 col-md-6 col-sm-6 mb-2";>
+                    <div class="fila">
+                    <section class="content1">
+                        <img  class="animate" src="./assets/img1.jpg" alt="programa-artístico" style="max-width: 45vw;" >
+                    </section>
+                    <section class="content1">
+                        <img  class="animate" src="./assets/img2.jpg" alt="programa-artístico" style="max-width: 45vw;">
+                    </section>
+                    <section class="content1">
+                        <img  class="animate" src="./assets/img3.jpg" alt="programa-artístico" style="max-width: 45vw;">
+                    </section>
+                    </div>            
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2";>
+                    <div class="fila">
+                        <section class="content">
+                            <h1>Programa Artístico</h1>
+                            <p id="texto">Para llegar a ser un artista reconocido y destacado es necesario el trabajo constante y los espacios para experimentar y retarse. Por eso desde el Museo se propone un programa integral y permanente que permita una formación continua y en escalada de los artistas, pasando por espacios de convivencia y aprendizaje como las residencias artísticas hasta los concursos, certámenes y subastas para aquellos profesionales más consagrados.</p>
+                            <div class="button" id="btn0"  style="max-width: 12vw;">Programa Artístico</div>
+                            <div class="button" id="btn1"  style="max-width: 15vw;">Residencias Artísticas</div>
+                            <div class="button" id="btn2"  style="max-width: 8vw;">Concursos</div>
+                            <div class="button" id="btn3"  style="max-width: 8vw;">SUMARTE</div>
+                        </section>
+                        <section class="content">
+                            <h1 style="padding-top: 12rem;">Programa Público</h1>
+                            <p id="texto1">Con el objetivo de interactuar y generar un impacto en los y las visitantes, así como lograr que nuevas personas disfruten y se vinculen con el museo, surge el programa público del Museo PRISMA.</p>
+                            <div class="button" id="btnN4"  style="max-width: 12vw;">Programa Público</div>
+                            <div class="button" id="btn4"  style="max-width: 12vw;">Lunes Musicales</div>
+                            <div class="button" id="btn5"  style="max-width: 13vw;">Mediación Cultural</div>
+                            <div class="button" id="btn6"  style="max-width: 14vw;">Programación Cultural</div>
+                        </section>
+                        <section class="content">
+                            <h1 style="padding-top: 9rem;">Programa Educativo</h1>
+                            <p id="texto2">Buscamos establecer procesos de enseñanza y aprendizaje que amplíen las capacidades de percepción, diálogo y reflexión conjunta y constructiva en relación al arte y la experiencia artística a través de contenidos virtual y procesos de formación presenciales.</p>
+                            <div class="button" id="btn7"  style="max-width: 14vw;">Programa Educativos</div>
+                            <div class="button" id="btn8"  style="max-width: 12vw;">PRISMA en familia</div>
+                            <div class="button" id="btn9"  style="max-width: 12vw;">Formación Docente</div>
+                            <div class="button" id="btn10"  style="max-width: 16vw;">Visitas Guiadas Escolares</div>
+                        </section>
+                    </div>            
+                </div>
+                
+            </article>
+        </section>
+
+    </main>
+
+
+<!-- Botón de regreso ↑ -->
+<button id="boton" class="scroll-top-btn">↑</button>
+
+
+
+    <!-- Footer dinámico -->
+    <footer id="footer"></footer>
+    
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Navbar dinámica -->
+    <script src="/components/navbar/navbar.js"></script>
+
+    <!-- Footer dinámica -->
+    <script src="/components/footer/footer.js"></script>
+
+
+    <script src="./programas.js" type="module"></script> 
+</body>
+</html>
