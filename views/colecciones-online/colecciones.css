@@ -1,0 +1,132 @@
+/* Estilo de colecciones online */
+body {
+    font-family: 'Tinos', serif;
+    margin: 0;
+    padding: 0;
+    color: #001d3d;
+    background-color: #fff;
+}
+
+/* Contenedor principal con fondo (solo cards) */
+.main-image {
+    background-image: url('/assets/images/colecciones/fondo-colecciones-online.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+    min-height: calc(100vh - 150px); 
+}
+
+/* Carrusel */
+.carousel-item img {
+    height: 400px; /* Altura de las imágenes */
+    width: 100%; 
+    object-fit: cover; 
+    filter: brightness(70%);
+    transition: filter 0.5s ease;
+}
+
+.carousel-item:hover img {
+    filter: brightness(100%);
+}
+
+.carousel-caption {
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Menú lateral */
+#sidebar {
+    border-right: 2px solid #3d1300;
+    height: 80vh;
+    overflow-y: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#sidebar.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.nav-link {
+    color: #001d3d;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #fff;
+    background-color: #ffc300;
+}
+
+/* Buscador */
+#search-input {
+    border: 2px solid #001d3d;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #ffc300;
+    box-shadow: 0 0 5px #ffc300;
+}
+
+/* Cards */
+.card {
+    background-color: #fff;
+    border: 2px solid #001d3d;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #ffc300;
+    color: #fff;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ffc300;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover .card-title {
+    background-color: #ffc300;
+    color: #fff; 
+}
+
+.card-content {
+    padding: 15px;
+    min-height: 100px;
+    
+}
+
+
+
+.card-img-top {
+    height: 200px; /* Altura de las imágenes de las cards */
+    width: 100%; 
+    object-fit: cover; 
+}
+
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card.new-card {
+    animation: slideIn 0.6s ease-out;
+}
