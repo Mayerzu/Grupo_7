@@ -1,0 +1,133 @@
+/* Fuente principal */
+body {
+  font-family: 'Tinos', serif;
+  background: linear-gradient(to right, #e6eaef, #ffffff);
+  color: #001d3d;
+}
+
+
+
+.cover {
+     position: relative;
+  height: 100vh;
+  background-image: url(../assets/images/general/museo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0.05rem;
+  
+}
+
+.contenido-cover {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  
+}
+
+.direccion {
+    display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  gap: 1.5rem; 
+  padding: 1rem;
+}
+
+.mapa {
+    border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* sombra suave */
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+
+.cover2 {
+  position: relative;
+  height: 100vh;
+  background-image: url(../assets/images/general/museo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0rem;
+  
+}
+
+
+.tarjeta {
+ 
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 5rem auto;
+  margin-top: 19rem;
+  cursor: pointer;
+}
+
+.tarjeta-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.tarjeta-front, .tarjeta-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.tarjeta-front img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+
+}
+
+.tarjeta-back {
+  background-color: #fff8e1;
+  color: #001d3d;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: 'Tinos', serif;
+  text-align: center;
+}
+
+.flipped .tarjeta-inner {
+  transform: rotateY(180deg);
+}
+
+
+.titulo {
+  color: #ffc300;
+  text-align: center;
+}
+
+.imagen-hover,
+.tarjeta-front img {
+  transition: transform 0.3s ease;
+}
+
+.imagen-hover:hover,
+.tarjeta-front img:hover {
+  transform: scale(1.05);
+}
+
+.texto {
+  display: flex;
+  width: auto;
+}
