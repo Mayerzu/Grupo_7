@@ -15,11 +15,11 @@ body {
     padding: 2rem;
 }
 
-p{
-
+.main-container .container-text p {
     font-size: large;
-    text-align: left;
+    text-align: justify;
 }
+
 
 /*-----Cards-------*/
 
